@@ -1,0 +1,505 @@
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 1em;
+    background: transparent;
+    margin-bottom: 1em;
+    height: 100%;
+}
+    
+.div1 { 
+    grid-area: 1 / 1 / 3 / 4;
+    height: fit-content; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 1em;
+    width: auto;
+    background-color: #5b62bad0;
+    color: rgb(255 255 255/1);
+}
+
+.div1 h1 {
+    font-weight: 700;
+    font-size: 1.85em;
+}
+
+.div2 { 
+    grid-area: 3 / 1 / 4 / 2; 
+    background-color: #119ce4ab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.div2 h1 {
+    font-size: 1.8em;
+}
+
+
+
+
+.div3 { 
+    grid-area: 3 / 2 / 4 / 3; 
+    background-color: #77b8fbc4;
+}
+
+/* ... Estilos anteriores ... */
+
+#theme-icon {
+    height: 3.5em;
+    width: 3.5em;
+    transition: ease-in-out 0.7s transform; 
+}
+
+.rotate-animation {
+    transform: rotate(280deg);
+    
+}
+
+#theme-toggle {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+  
+.div3 button .moon {
+    display: none;
+}
+
+
+.div4 { 
+    grid-area: 3 / 3 / 4 / 4; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#fb6d70d6;
+    color: white;
+}
+
+.div4 p{
+    margin: 0em;
+    font-size: 0.9em;
+}
+
+.div5 { 
+    grid-area: 4 / 1 / 5 / 2; 
+    background-color: #119ce4d4;
+    border-radius: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-decoration: none;
+    flex-direction: column;
+}
+
+.div5 h1 {
+    margin-bottom: 0em;
+    margin-top: 0.3em;
+}
+
+.external_link, .external_link1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 15px !important;
+    background: transparent;
+    width: 70%;
+}
+
+.external_link img, .external_link1 img{
+    height: 13px;
+    width: auto;
+}
+
+.external_link1 {
+    width: 90%;
+}
+
+
+.div6 { 
+    grid-area: 4 / 2 / 5 / 4; 
+    background-image: url(../../assets/fondo_proyectos.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.div6 a, .div7 a {
+    height: 100%;
+    width: 100%;
+    background-color: #5b62ba8f;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-radius: 1em;
+}
+
+.div6 a h2, .div7 a h2 {
+    font-weight: 600;
+    font-size: 1.2em;
+    padding-left: 1em;
+    margin-bottom: 0em;
+}
+
+.div6 a p, .div7 a p {
+    font-size: 0.8em;
+    padding: 0em 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.div7 { 
+    grid-area: 5 / 1 / 6 / 3; 
+    background-image: url(../../assets/fondo_github.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.div7 a {
+    background-color: #2d30326e;
+}
+
+.div8 { 
+    grid-area: 5 / 3 / 6 / 4; 
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 1em;
+    height: auto;
+    background-color: #9073ccbd;
+}
+
+.div8 img {
+    aspect-ratio: auto 16 / 16;
+    height: 16px;
+}
+
+.div9 {
+    grid-area: 6 / 1 / 7 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #7f99a7d6;
+}
+
+.div9 h1, .div15 h1{
+    font-size: 2.4em;
+    margin: 0;
+}
+
+.div9 h3, .div15 h3 {
+    margin: 0;
+    font-size: 0.95em;
+}
+
+.div10 {
+    grid-area: 6 / 2 / 7 / 4;
+    text-decoration: none;
+    background-image: url(../../assets/album.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+}
+
+.div10 .ymusic_logo {
+    height: 30px;
+    background-color: transparent;
+    padding: 0.6em 0em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div10 p {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.ymusic_logo img{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.div10_mask {
+    background-color: #0000006e;
+    padding: 0em 1em;
+}
+
+#external_link {
+    height: 13px;
+    width: auto;
+}
+
+.div11, .div12, .div13 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ae26d6b3;
+    border-radius: 1em;
+    height: 100px;
+}
+
+.div11 svg, .div12 svg, .div13 svg {
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: 0.5em;
+    color: white;
+}
+
+.div11 {
+    background-color: #7289dae6;
+}
+
+.div13 {
+    background-color: #1da1f2d4;
+}
+
+.div14 {
+    grid-area: 8 / 1 / 8 / 3;
+    font-size: 0.8em;
+    line-height: 0.4em;
+    padding: 0em 1em;
+    background-color: rgb(71 141 255 / 75%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.div14 img {
+    height: 5em;
+}
+
+#temp {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 1em;
+}
+
+#description {
+    font-weight: 600;
+}
+
+#location {
+    font-size: 0.9em;
+}
+
+.w-info-text {
+    background: transparent;
+    margin-right: 1em
+}
+
+.div15 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f89b00d4;
+}
+
+
+div {
+    background-color: aqua;
+    width: auto;
+    height: 100px;
+    border-radius: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.div1 p{
+   text-align: justify;
+}
+
+.num {
+    font-size: 2em !important;
+    font-weight: 700;
+}
+
+.anios {
+    font-weight: 600; 
+}
+
+.contenedor {
+    background: transparent;
+    height: 100%;
+}
+
+
+@media (min-width:768px) {
+    .contenedor {
+        margin: 1.25em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .parent {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 1em;
+        width: 47em;
+    }
+
+    div {
+        height: 10em;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 3 / 4;
+        height: 90%;
+    }
+
+    .div2 {
+        grid-area: 1 / 4 / 1 / 4;
+    }
+
+    .div2 h1 {
+        font-size: 3em;
+    }
+
+    .div3 {
+        grid-area: 2 / 4 / 2 / 4;
+    }
+
+    .div4 {
+        grid-area: 3 / 1 / 3 / 1;
+    }
+
+    .div4 p {
+        font-size: 1.2em;
+    }
+
+    .num {
+        font-size: 3em !important;
+    }
+
+    #theme-icon {
+        height: 5em;
+        width: 5em;
+    }  
+
+    #temp {
+        margin-top: 0.5em;
+		margin-bottom: 0.6em;
+		font-size: 3.5em;
+    }
+
+    #description, #location, #hora, #title{
+        font-size: 1.5em
+    }
+
+    .external_link1 {
+        height: 40px !important;
+    }
+    
+    .external_link img, .external_link1 img{
+        height: 15px;
+    }
+
+    .div5 {
+        grid-area: 3 / 2 / 3 / 2;
+    }
+
+    .div5 h1 {
+        font-size: 3em;
+        margin-top: 0.2em;
+    }
+
+    .div6 {
+        grid-area: 3 / 3 / 3 / 5;
+    }
+
+    .div6 a h2, .div7 a h2 {
+        font-size: 1.8em;
+        padding: 0em 0.76em;
+    }
+    
+    .div6 a p, .div7 a p {
+        font-size: 1em;
+    }
+
+    .div7 {
+        grid-area: 4 / 1 / 4 / 3;
+    }
+
+    .div8 {
+        grid-area: 4 / 3 / 4 / 3;
+    }
+
+    .div8 svg {
+        height: 1.5em;
+        width: 1.5em;
+    }
+
+    .div8 img {
+        height: 1.5em;
+    }
+
+    .div10 {
+        grid-area: 5 / 3 / 6 / 5;
+    }
+
+    .div11, .div12, .div13 {
+        height: auto;
+    }
+
+    .div11 svg, .div12 svg, .div13 svg {
+        height: 4em;
+        width: 4em;
+        padding: 0.5em 0;
+    }
+
+    .div14 {
+        grid-area: 6 / 2 / 6 / 4;
+        height: 100%;
+        padding: 0em 1.5em
+    }
+    
+    .div14 img {
+        height: 9em;
+    }
+
+    .div15 {
+        grid-area: 4 / 4 / 4 / 4;
+    }
+
+    .div15 h1, .div9 h1 {
+        font-size: 3em;
+    }
+
+    .div15 h3, .div9 h3 {
+        font-size: 1.25em;
+    }
+
+    .div10 .ymusic_logo {
+        padding: 1em 0em;
+    }
+
+    .ymusic_logo img {
+        height: 2em;
+        width: 2em;
+    }
+
+    .div10_mask p {
+        font-size: 1em;
+    }
+
+}
