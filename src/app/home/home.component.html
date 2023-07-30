@@ -1,28 +1,40 @@
 <div class="contenedor">
     <div class="parent">
+
+        <!-- Intro -->
         <div class="div1">
             <h1>👋🏻 Hola, soy Valentino Terreno</h1>
             <p>Soy <b>desarrollador frontend</b> y actualmente trabajo con <b>Angular</b>. Busco estar en constante formación y llevar lo aprendido a la práctica. Soy <b>responsable</b>, <b>dedicado</b> y curioso. Me encantaría formar parte de proyectos que me permitan desarrollarme tanto de manera profesional como personal.</p>
         </div>
+
+        <!-- Arg -->
         <div class="div2">
             <h1>ARG</h1>
         </div>
+
+        <!-- color theme -->
         <div class="div3"> 
             <button id="theme-toggle"> 
                 <img id="theme-icon" class="sun" src="../../assets/sun.webp" alt="sol">
             </button>
-        </div> <!-- color theme -->
+        </div>
+
+        <!-- Edad -->
         <div class="div4"> 
             <p>EDAD</p>
             <P class="num">19</P>
             <p class="anios">AÑOS</p>
         </div> 
+
+        <!-- Linkedin -->
         <a class="div5" href="https://www.linkedin.com/in/valentino-terreno-89372a232/" target="_blank">
             <h1>in</h1>
             <div class="external_link">
                 <img src="../../assets/external_link.webp" alt="external_link">
             </div>
         </a>
+
+        <!-- Proyectos -->
         <div class="div6">
             <a [routerLink]="'/proyectos'"> 
                 <h2>Proyectos</h2>
@@ -30,6 +42,7 @@
             </a>
         </div>
         
+        <!-- Github -->
         <div class="div7"> 
             <a href="https://github.com/vterreno" target="_blank">
                 <h2>Github</h2>
@@ -39,7 +52,8 @@
                 </div>  
             </a>
         </div>
-    
+        
+        <!-- Stack -->
         <div class="div8"> 
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"></path></svg>
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path></svg>
@@ -51,12 +65,14 @@
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z"></path></svg>
             <img src="../../assets/boostrap_logo.webp" alt="boostrap_logo">
         </div>
-    
+        
+        <!-- Inglés -->
         <div class="div9"> 
             <h1>C1</h1>
             <h3>CEFR</h3>
         </div>
-    
+        
+        <!-- Música -->
         <a class="div10" href="https://music.youtube.com/playlist?list=PLvK8dQbTbh1DSXRKEFNTiKQPPmt3C1DgR&feature=share" target="_blank"> 
             <div class="div10_mask">
                 <div class="ymusic_logo">
@@ -68,21 +84,24 @@
             </div>
     
         </a>
-    
+        
+        <!-- Ds -->
         <a class="div11" href="https://discordapp.com/users/vterreno" target="_blank">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"></path></svg>
             <div class="external_link">
                 <img src="../../assets/external_link.webp" alt="external_link">
             </div>
         </a>
-    
+        
+        <!-- Mail -->
         <a class="div12" href="mailto:ninot2016@gmail.com">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-4xl md:text-7xl lg:text-9xl text-white dark:text-[#ffffffaa]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
             <div class="external_link">
                 <img src="../../assets/external_link.webp" alt="external_link">
             </div>
         </a>
-    
+        
+         <!-- Twitter -->
         <a class="div13" href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den" target="_blank">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="text-4xl md:text-7xl lg:text-9xl text-white dark:text-[#ffffffaa]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path></svg>
             <div class="external_link">
@@ -90,7 +109,7 @@
             </div>
         </a>
     
-    
+         <!-- Clima -->
         <div *ngIf="temperature !== undefined && description !== undefined && horaActual !== undefined" class=" div14 weather-info noche" id="weather-info"> 
             <div class="w-info-text">
                 <p id="temp"> {{temperature}} °C</p>
@@ -100,6 +119,8 @@
             </div>
             <img id="tiempo" src="../../assets/dia.webp" alt="dia o noche">
         </div>
+
+         <!-- Utn -->
         <div class="div15"> 
             <h1>IES</h1>
             <h3>UTN</h3>

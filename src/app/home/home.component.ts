@@ -28,7 +28,7 @@ const weatherDescriptions: { [key: string]: string } = {
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css', './home_mediaT.component.css']
 })
 
 
@@ -116,7 +116,7 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  // hora
+  // Hora
   actualizarHora() {
     const fecha = new Date();
     const img = document.getElementById('tiempo') as HTMLImageElement
