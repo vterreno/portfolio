@@ -1,3 +1,14 @@
+.bg-tiempo {
+    height: 6em;
+    width: 6em;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    align-items: center;
+    border-radius: 100em;
+    margin-right: 0.5em;
+}
+
 @media (min-width:768px) {
     .contenedor {
         margin: 1.25em;
@@ -158,4 +169,8 @@
         font-size: 1em;
     }
 
+    .bg-tiempo {
+        height: 10em;
+        width: 10em;
+    }
 }

@@ -42,27 +42,10 @@ export class HomeComponent implements OnInit {
   constructor() { }
   
   ngOnInit(): void {
-    // Función para cambiar el tema
-    function toggleTheme() {
-      const body = document.body;
-      body.classList.toggle('theme-dark');
-
-      // Cambiar el ícono de sol/luna
-      const themeIcon = document.getElementById('theme-icon') as HTMLImageElement;
-      if (body.classList.contains('theme-dark')) {
-        themeIcon.src = '../../assets/moon.webp';
-        themeIcon.classList.toggle('moon')
-        themeIcon.classList.remove('sun')
-      } else {
-        themeIcon.src = '../../assets/sun.webp';
-        themeIcon.classList.toggle('sun')
-        themeIcon.classList.remove('moon')
-      }
-    }
 
     const themeToggleBtn = document.getElementById('theme-toggle');
     themeToggleBtn?.addEventListener('click', () => {
-      toggleTheme();
+      this.toggleTheme();
       const themeIcon = document.getElementById('theme-icon');
       themeIcon?.classList.add('rotate-animation');
       setTimeout(() => {
@@ -79,6 +62,24 @@ export class HomeComponent implements OnInit {
   ngOnDestroy() {
     if (this.intervalId) {
       clearInterval(this.intervalId);
+    }
+  }
+
+  // Función para cambiar el tema
+  toggleTheme() {
+    const body = document.body;
+    body.classList.toggle('theme-dark');
+
+    // Cambiar el ícono de sol/luna
+    const themeIcon = document.getElementById('theme-icon') as HTMLImageElement;
+    if (body.classList.contains('theme-dark')) {
+      themeIcon.src = '../../assets/moon.webp';
+      themeIcon.classList.toggle('moon')
+      themeIcon.classList.remove('sun')
+    } else {
+      themeIcon.src = '../../assets/sun.webp';
+      themeIcon.classList.toggle('sun')
+      themeIcon.classList.remove('moon')
     }
   }
 
@@ -121,6 +122,7 @@ export class HomeComponent implements OnInit {
     const fecha = new Date();
     const img = document.getElementById('tiempo') as HTMLImageElement
     const div = document.getElementById('weather-info')
+    const bg = document.getElementById('bg-tiempo')
 
     const options: Intl.DateTimeFormatOptions = {
       hour: '2-digit',
@@ -129,10 +131,12 @@ export class HomeComponent implements OnInit {
 
     this.horaActual = fecha.toLocaleTimeString('es-AR', options);
     
-    if(this.horaActual > '21:00') {
+    if(this.horaActual > '21:00' || this.horaActual < '6:00') {
       img.src = '../../assets/noche.webp'
-      if (div && div.style) {
-        div.style.backgroundColor = '#b15afcd4';
+      if (div && div.style && bg && bg.style) {
+        div.style.background = 'rgb(11 27 48)';
+        bg.style.background = 'linear-gradient(to bottom right,#3f51b5,#ab47bc 70%)';
+        bg.style.boxShadow = '1px 1px 30px #512da8';
       }
     
     } else {
