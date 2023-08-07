@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 const apiKey = 'fa37dc30bfb45562f0a9c3f240e43152';
 
@@ -31,15 +32,19 @@ const weatherDescriptions: { [key: string]: string } = {
   styleUrls: ['./home.component.css', './home_mediaT.component.css']
 })
 
-
 export class HomeComponent implements OnInit {
-
+  // Componente Idioma
+  currentLanguage = 'es';
+  languages: string[] = ['en', 'es'];
+  translations: any;
+  
+  // Componente Clima
   temperature: number = 0
   description: string = ''
   horaActual: string = ''
   intervalId: any;
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
   
   ngOnInit(): void {
 
@@ -53,10 +58,15 @@ export class HomeComponent implements OnInit {
       }, 300); // Espera 300ms (tiempo de la animación) y luego elimina la clase para permitir otra transición
     });
 
-    this.loadWeatherData();
+    this.intervalId = setInterval(() => {
+      this.loadWeatherData();
+    }, 500); // Actualiza el clima cada medio segundo
+
     this.intervalId = setInterval(() => {
       this.actualizarHora();
     }, 1000); // Actualizar la hora cada segundo
+
+    this.loadTranslations();
   }
 
   ngOnDestroy() {
@@ -103,7 +113,12 @@ export class HomeComponent implements OnInit {
   // Función para mostrar los datos en la interfaz
   displayWeatherData(data: WeatherData): void {
     this.temperature = Math.round(data.main.temp);
-    this.description = weatherDescriptions[data.weather[0].description] || data.weather[0].description;
+    if( this.currentLanguage == "es") {
+      this.description = weatherDescriptions[data.weather[0].description] || data.weather[0].description;
+    } else {
+      this.description = data.weather[0].description.slice(0, 1).toUpperCase() + data.weather[0].description.slice(1)
+    }
+    
   }
 
   // Función principal para cargar los datos del clima en la interfaz
@@ -131,19 +146,35 @@ export class HomeComponent implements OnInit {
 
     this.horaActual = fecha.toLocaleTimeString('es-AR', options);
     
-    if(this.horaActual > '21:00' || this.horaActual < '6:00') {
+    if(this.horaActual > '21:00' || this.horaActual < '06:00') {
       img.src = '../../assets/noche.webp'
       if (div && div.style && bg && bg.style) {
         div.style.background = 'rgb(11 27 48)';
         bg.style.background = 'linear-gradient(to bottom right,#3f51b5,#ab47bc 70%)';
         bg.style.boxShadow = '1px 1px 30px #512da8';
       }
-    
     } else {
-      img.src = '../../assets/dia.webp'
+      img.src = '../../assets/nubes.webp'
     }
     
   }
-  
+
+  // Idioma 
+  loadTranslations(): void {
+    const translationFile = `assets/${this.currentLanguage}.json`;
+
+    this.http.get(translationFile).subscribe((data: any) => {
+      this.translations = data;
+    });
+  }
+
+  changeLanguage(lang: string): void {
+    this.currentLanguage = lang;
+    this.loadTranslations();
+  }
+
+  getTranslation(key: string): string {
+    return this.translations[key] || key;
+  }
 
 }

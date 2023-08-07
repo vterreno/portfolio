@@ -3,15 +3,17 @@
 
         <!-- Intro -->
         <div class="div1">
-            <h1>👋🏻 Hola, soy Valentino Terreno</h1>
-            <p>Soy <b>desarrollador frontend</b> y actualmente trabajo con <b>Angular</b>. Busco estar en constante formación y llevar lo aprendido a la práctica. Soy <b>responsable</b>, <b>dedicado</b> y curioso. Me encantaría formar parte de proyectos que me permitan desarrollarme tanto de manera profesional como personal.</p>
+            <h1>{{ getTranslation('intro') }}</h1>
+            <p>{{ getTranslation('intro-p') }}</p>
         </div>
 
         <!-- Arg -->
-        <div class="div2">
-            <h1>ARG</h1>
+        <div class="language-selector div2">
+            <button *ngFor="let lang of languages" (click)="changeLanguage(lang)" [class.active]="currentLanguage === lang">
+              {{ lang.toUpperCase() }}
+            </button>
         </div>
-
+          
         <!-- color theme -->
         <div class="div3"> 
             <button id="theme-toggle"> 
@@ -21,9 +23,9 @@
 
         <!-- Edad -->
         <div class="div4"> 
-            <p>EDAD</p>
+            <p>{{ getTranslation('edad') }}</p>
             <P class="num">19</P>
-            <p class="anios">AÑOS</p>
+            <p class="anios">{{ getTranslation('anios') }}</p>
         </div> 
 
         <!-- Linkedin -->
@@ -37,8 +39,8 @@
         <!-- Proyectos -->
         <div class="div6">
             <a [routerLink]="'/proyectos'"> 
-                <h2>Proyectos</h2>
-                <p>Aca podrás encontrar algunos de mis proyectos.</p>
+                <h2>{{ getTranslation('proyectos') }}</h2>
+                <p>{{ getTranslation('proyectos-intro') }}</p>
             </a>
         </div>
         
@@ -46,7 +48,7 @@
         <div class="div7"> 
             <a href="https://github.com/vterreno" target="_blank">
                 <h2>Github</h2>
-                <p>Mi perfil de Github, donde subo mis proyectos.</p>  
+                <p>{{ getTranslation('github') }}</p>  
                 <div class="external_link1">
                     <img src="../../assets/external_link.webp" alt="external_link">
                 </div>  
@@ -118,7 +120,7 @@
                 <p id="location"> Córdoba, ARG</p>
             </div>
             <div class="bg-tiempo" id="bg-tiempo">
-                <img id="tiempo" src="../../assets/dia.webp" alt="dia o noche">
+                <img id="tiempo" src="../../assets/nubes.webp" alt="dia o noche">
             </div>
             
         </div>

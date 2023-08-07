@@ -6,7 +6,9 @@
     background: transparent;
     align-items: center;
     border-radius: 100em;
-    margin-right: 0.5em;
+    margin-right: 1em;
+    background: linear-gradient(to bottom left,#ffeb3b,#f9a825 90%);
+    box-shadow: 1px 1px 30px #ffa000;
 }
 
 @media (min-width:768px) {
@@ -172,5 +174,6 @@
     .bg-tiempo {
         height: 10em;
         width: 10em;
+        margin-right: 1.5em;
     }
 }

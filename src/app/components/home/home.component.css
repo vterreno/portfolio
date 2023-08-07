@@ -23,6 +23,7 @@
 .div1 h1 {
     font-weight: 700;
     font-size: 1.85em;
+    text-wrap: balance;
 }
 
 .div2 { 
@@ -79,7 +80,7 @@
 
 .div4 p{
     margin: 0em;
-    font-size: 0.9em;
+    font-size: 0.85em;
 }
 
 .div5 { 
@@ -127,7 +128,7 @@
 
 .div6 { 
     grid-area: 4 / 2 / 5 / 4; 
-    background-image: url(../../assets/fondo_proyectos.gif);
+    background-image: url(../../../assets/fondo_proyectos.gif);
     display: flex;
 }
 
@@ -152,12 +153,12 @@
     font-size: 0.8em;
     padding: 0em 1.5em;
     margin-top: 0.5em;
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
 }
 
 .div7 { 
     grid-area: 5 / 1 / 6 / 3; 
-    background-image: url(../../assets/fondo_github.gif);
+    background-image: url(../../../assets/fondo_github.gif);
     display: flex;
 }
 
@@ -203,12 +204,12 @@
 .div10 {
     grid-area: 6 / 2 / 7 / 4;
     text-decoration: none;
-    background-image: url(../../assets/album.webp);
+    background-image: url(../../../assets/album.webp);
     border-radius: 1em;
 }
 
 .div10 .ymusic_logo {
-    height: 30px;
+    height: 35px;
     background-color: transparent;
     padding: 0.6em 0em;
     display: flex;
@@ -250,7 +251,7 @@
     width: 2.5em;
     height: 2.5em;
     color: white;
-    margin-top: 0.6em;
+    margin-top: 1em;
 	margin-bottom: 0.3em;
 }
 
@@ -267,8 +268,7 @@
     font-size: 0.8em;
     line-height: 0.4em;
     padding: 0em 1em; 
-    background: #2342D3;
-    background: linear-gradient(45deg, #2342D3, #3f9feb);
+    background: rgb(93 179 246);
     display: flex;
     align-items: center;
     justify-content: space-between;
