@@ -7,11 +7,14 @@
             <p>{{ getTranslation('intro-p') }}</p>
         </div>
 
-        <!-- Arg -->
+        <!-- Idioma -->
         <div class="language-selector div2">
-            <button *ngFor="let lang of languages" (click)="changeLanguage(lang)" [class.active]="currentLanguage === lang">
-              {{ lang.toUpperCase() }}
-            </button>
+            <h1>{{ getTranslation('idioma')}}</h1>
+            <div class="caja-btn">
+                <button *ngFor="let lang of languages" (click)="changeLanguage(lang)" [class.active]="currentLanguage === lang" id="btn-idioma">
+                    {{ lang.toUpperCase() }}
+                  </button>
+            </div>
         </div>
           
         <!-- color theme -->

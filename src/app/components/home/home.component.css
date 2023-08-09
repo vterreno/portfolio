@@ -16,7 +16,7 @@
     font-weight: 400;
     padding: 1em;
     width: auto;
-    background-color: #5b62bad0;
+    background-color: #4b55b4e6;
     color: rgb(255 255 255/1);
 }
 
@@ -28,15 +28,19 @@
 
 .div2 { 
     grid-area: 3 / 1 / 4 / 2; 
-    background-color: #119ce4ab;
+    background-color: #55489cc2;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    flex-direction: column;
 }
 
 .div2 h1 {
     font-size: 1.8em;
+    margin: 0;
+    font-size: 3em;
+    margin: 0;
+    margin-top: 0.2em;
 }
 
 .div3 { 
@@ -61,6 +65,7 @@
     width: 100%;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
   
 .div3 button .moon {
@@ -74,7 +79,7 @@
     align-items: center;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
-    background-color:#fb6d70d6;
+    background-color:#f35059e8;
     color: white;
 }
 
@@ -174,7 +179,7 @@
     justify-items: center;
     padding: 1em;
     height: auto;
-    background-color: #9073ccbd;
+    background-color: #815050db;
 }
 
 .div8 img {
@@ -188,7 +193,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #7f99a7d6;
+    background-color: rgb(193 67 108);
 }
 
 .div9 h1, .div15 h1{
@@ -303,12 +308,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #f89b00d4;
+    background-color: #f7a315e3;
 }
 
 
 div {
-    background-color: aqua;
+    background-color: transparent;
     width: auto;
     height: 110px;
     border-radius: 1em;
