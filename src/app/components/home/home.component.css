@@ -18,6 +18,16 @@
     width: auto;
     background-color: #4b55b4e6;
     color: rgb(255 255 255/1);
+    overflow: hidden;
+	display: flex;
+}
+
+.intro {
+    height: fit-content;
+}
+
+.profile_pic{
+    display: none;
 }
 
 .div1 h1 {

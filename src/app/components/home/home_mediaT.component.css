@@ -51,6 +51,24 @@
         height: 90%;
     }
 
+    .intro {
+        width: 60%
+    }
+
+    .profile_pic{
+        position: relative;
+        display: flex;
+        height: 100%;
+    }
+
+    .profile_pic img {
+        position: absolute;
+    	height: 150%;
+    	display: flex;
+    	justify-content: center;
+    	top: -10%;
+    }
+
     .div2 {
         grid-area: 1 / 4 / 1 / 4;
     }

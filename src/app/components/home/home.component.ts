@@ -23,7 +23,8 @@ const weatherDescriptions: { [key: string]: string } = {
   'snow': 'Nieve',
   'shower rain': 'Llovizna',
   'broken clouds': 'Tormentoso',
-  'mist': 'Niebla'
+  'mist': 'Niebla',
+  'overcast clouds': 'Nubes',
 };
 
 @Component({
