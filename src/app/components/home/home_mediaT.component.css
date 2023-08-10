@@ -26,6 +26,19 @@
     color: #c9b4f6eb;
 }
 
+.proyectos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: fit-content;
+}
+
+.proyectos svg {
+    height: 1.5em;
+    width: 2em;
+    margin-right: 1.2em;
+}
+
 @media (min-width:768px) {
     .contenedor {
         margin: 1.25em;
@@ -109,12 +122,38 @@
         font-size: 1.5em
     }
 
-    .external_link1 {
-        height: 40px !important;
+    #external_link {
+        height: 15px;
+        width: auto;
+        margin-right: 0.6em;
     }
     
-    .external_link img, .external_link1 img{
+    .external_link1 {
+        display: none;
+    }
+    
+    .external_link img{
         height: 15px;
+    }
+
+    .external_link2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px !important;
+        background: transparent;
+        padding: 0em 1.6em;
+        padding-top: 0.8em;
+        padding-bottom: 0.3em;
+    }
+
+    .external_link2 img{
+        height: 15px;
+    }
+
+    .external_link2 svg {
+        height: 2em;
+        width: 2em;
     }
 
     .div5 {
@@ -130,6 +169,14 @@
         grid-area: 3 / 3 / 3 / 5;
     }
 
+    .div7 a h2 {
+        margin-top: 0.2em;
+    }
+
+    .div7 a p {
+        margin-top: 0.2em;
+    }
+
     .div6 a h2, .div7 a h2 {
         font-size: 1.8em;
         padding: 0em 0.76em;
@@ -137,6 +184,12 @@
     
     .div6 a p, .div7 a p {
         font-size: 1em;
+    }
+
+    .proyectos svg {
+        height: 2.4em;
+        width: 2.5em;
+        margin-right: 2em;
     }
 
     .div7 {
@@ -154,6 +207,10 @@
 
     .div8 img {
         height: 1.5em;
+    }
+
+    .div9 h1 {
+        margin: 0;
     }
 
     .div10 {
@@ -210,4 +267,101 @@
         width: 10em;
         margin-right: 1.5em;
     }
+}
+
+@media (min-width: 1532px) {
+    .contenedor {
+        padding: 0 4em;
+    }
+
+    .parent {
+        width: auto;
+        height: auto;
+    }
+
+    .div1,.div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div15{
+        height: auto;
+    }
+
+    .div2 {
+        height: 18em;
+    	display: flex;
+   	 	align-items: center;
+    }
+
+    .div2 h1 {
+        font-size: 5em;
+        margin-top: 0;
+    }
+
+    .div2 button {
+        font-size: 2em;
+    }
+
+    .caja-btn {
+        height: auto;
+    }
+
+    .intro {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5em;
+        justify-content: center;
+        padding: 0em 1em;
+    }
+
+    .intro p {
+        margin: 0;
+    }
+
+    .div4 {
+        font-size: 1.5em;
+    }
+
+    .div5 h1 {
+        font-size: 5em;
+    }
+
+    .external_link img, .external_link1 img {
+        height: 20px;
+    }
+
+    .div8 svg {
+        height: 3em;
+        width: 3em;
+    }
+
+    .div8 img {
+        height: 3em;
+    }
+
+    .div9 {
+        font-size: 1.5em;
+    }
+
+    .div9 h1 {
+        margin-top: 0.34em;
+    }
+
+    #margin {
+        margin-top: 1em;
+    }
+
+    .external_link2 {
+        margin-top: 1em;
+    }
+
+
+    .div11 svg, .div12 svg, .div13 svg {
+        height: 5em;
+        width: 5em;
+        padding: 2em 0;
+    }
+
+
+    .div15 {
+        font-size: 1.5em;
+    }
+
 }

@@ -128,12 +128,16 @@
 }
 
 .external_link img, .external_link1 img{
-    height: 13px;
+    height: 12px;
     width: auto;
 }
 
 .external_link1 {
     width: 90%;
+}
+
+.external_link2 {
+    display: none;
 }
 
 .div7, .div10, .div6{
@@ -204,14 +208,28 @@
     align-items: center;
     flex-direction: column;
     background-color: rgb(193 67 108);
+    border-radius: 1em;
+    text-decoration: none;
+    color: white;
 }
 
-.div9 h1, .div15 h1{
+.div9 h1 {
+    font-size: 2em;
+    margin: 0em;
+    margin-top: 0.2em;
+}
+
+.div9 h3 {
+    font-size: 0.8em;
+    margin: 0em;
+}
+
+.div15 h1{
     font-size: 2.4em;
     margin: 0;
 }
 
-.div9 h3, .div15 h3 {
+.div15 h3 {
     margin: 0;
     font-size: 0.95em;
 }
@@ -248,8 +266,9 @@
 }
 
 #external_link {
-    height: 13px;
+    height: 12px;
     width: auto;
+    margin-right: 0.4em;
 }
 
 .div11, .div12, .div13 {

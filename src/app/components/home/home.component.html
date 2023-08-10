@@ -48,7 +48,13 @@
         <!-- Proyectos -->
         <div class="div6">
             <a [routerLink]="'/proyectos'"> 
-                <h2>{{ getTranslation('proyectos') }}</h2>
+                <div class="proyectos">
+                    <h2>{{ getTranslation('proyectos') }}</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="37" viewBox="0 0 120 37" fill="none">
+                        <path d="M118.77 20.2678C119.746 19.2915 119.746 17.7085 118.77 16.7322L102.86 0.82233C101.884 -0.15398 100.301 -0.15398 99.3244 0.82233C98.3481 1.79864 98.3481 3.38155 99.3244 4.35786L113.467 18.5L99.3244 32.6421C98.3481 33.6184 98.3481 35.2014 99.3244 36.1777C100.301 37.154 101.884 37.154 102.86 36.1777L118.77 20.2678ZM0.997803 21H117.002V16H0.997803V21Z" fill="white"/>
+                    </svg>
+                </div>
+                
                 <p>{{ getTranslation('proyectos-intro') }}</p>
             </a>
         </div>
@@ -56,6 +62,10 @@
         <!-- Github -->
         <div class="div7"> 
             <a href="https://github.com/vterreno" target="_blank">
+                <div class="external_link2">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" color="white" class="text-xs md:text-5xl hidden md:flex" style="color:white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+                    <img src="../../assets/external_link.webp" alt="external_link">
+                </div>  
                 <h2>Github</h2>
                 <p>{{ getTranslation('github') }}</p>  
                 <div class="external_link1">
@@ -78,10 +88,13 @@
         </div>
         
         <!-- Inglés -->
-        <div class="div9"> 
+        <a class="div9" href="../../../assets/StatementOfResult.pdf" target="_blank"> 
             <h1>C1</h1>
             <h3>CEFR</h3>
-        </div>
+            <div class="external_link" id="margin">
+                <img src="../../assets/external_link.webp" alt="external_link">
+            </div> 
+        </a>
         
         <!-- Música -->
         <a class="div10" href="https://music.youtube.com/playlist?list=PLvK8dQbTbh1DSXRKEFNTiKQPPmt3C1DgR&feature=share" target="_blank"> 
