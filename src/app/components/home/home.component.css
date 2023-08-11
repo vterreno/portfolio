@@ -332,35 +332,4 @@
     margin-right: 1em
 }
 
-.div15 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #f7a315e3;
-}
-
-
-div {
-    background-color: transparent;
-    width: auto;
-    height: 110px;
-    border-radius: 1em;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-}
-
-.num {
-    font-size: 2em !important;
-    font-weight: 700;
-}
-
-.anios {
-    font-weight: 600; 
-}
-
-.contenedor {
-    background: transparent;
-    height: 100%;
-}
 

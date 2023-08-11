@@ -1,0 +1,222 @@
+@media (min-width: 1024px) {
+    .parent {
+        width: auto;
+        height: auto;
+    }
+
+    .div1,.div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div15{
+        height: auto;
+    }
+
+    .div2 {
+        height: 13em;
+        display: flex;
+   	 	align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .div2 h1 {
+        margin: 0;
+    }
+
+    .caja-btn {
+        height: auto;
+    }
+
+    .intro {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1em;
+        justify-content: center;
+        padding-left: 1em;
+    }
+
+    .external_link img, .external_link1 img {
+        height: 15px;
+    }
+
+    .external_link2 {
+        padding: 0 1.8em;
+        margin: 1.5em 0;
+    }
+
+    .div8 svg {
+        height: 2em;
+        width: 2em;
+    }
+
+    .div8 img {
+        height: 2em;
+    }
+
+    .div10_mask {
+        height: 13em;
+    }
+
+    .w-info-text {
+        font-size: 1.2em;
+    }
+
+    .bg-tiempo {
+        height: 12em;
+        width: 12em;
+        margin-right: 2em;
+    }
+    
+    #temp {
+        margin-top: 0.65em;
+    }
+    
+    #tiempo {
+        height: 11em;
+    }
+
+    #title {
+        margin-top: 1em;
+    }
+
+    .hover-message {
+        left: 15em;
+    }
+}
+   
+@media (min-width: 1440px) {
+    .contenedor {
+        padding: 0 4em;
+    }
+
+    .parent {
+        width: 90em;
+    }
+
+    .div2 {
+        height: 18em;	
+    }
+
+    .div2 h1 {
+        font-size: 5em;
+    }
+
+    .div2 button {
+        font-size: 2em;
+    }
+    
+    .intro {
+        font-size: 1.5em;
+    }
+
+    .intro p {
+        margin: 0;
+    }
+
+    .div4, .div6, .div7 {
+        font-size: 1.5em;
+    }
+
+    .div5 h1 {
+        font-size: 5em;
+    }
+
+    .external_link img, .external_link1 img {
+        height: 20px;
+    }
+
+    .div7 h2 {
+        margin-top: 1.3em !important;
+    }
+    
+    .external_link2 img {
+        height: 20px;
+    }
+
+    .external_link2 svg {
+        height: 2.5em;
+        width: 2.5em;
+    }
+
+    .div8 svg {
+        height: 3em;
+        width: 3em;
+    }
+
+    .div8 img {
+        height: 3em;
+    }
+
+    .div9 {
+        font-size: 1.5em;
+    }
+
+    .div9 h1 {
+        margin-top: 0.34em;
+    }
+
+    #margin {
+        margin-top: 1em;
+    }
+
+    .div11 svg, .div12 svg, .div13 svg {
+        height: 5em;
+        width: 5em;
+        padding: 2em 0;
+    }
+
+    .div14 {
+        padding: 0em 3em
+    }
+
+    .w-info-text {
+        font-size: 1.8em;
+    }
+
+    .bg-tiempo {
+        height: 18em;
+        width: 18em;
+    }
+    
+    #temp {
+        margin-top: 0.65em;
+    }
+    
+    #tiempo {
+        height: 15em;
+    }
+
+    .div10_mask {
+        height: 100%;
+    }
+
+    .ymusic_logo {
+        height: 3em !important;
+    }
+
+    .ymusic_logo img {
+        height: 2.5em;
+        width: 2.5em;
+    }
+
+    #external_link {
+        height: 20px;
+    }
+
+    .div10 {
+        font-size: 1.5em;
+    }
+
+    .div15 {
+        font-size: 1.5em;
+    }
+
+    .profile_pic img{
+        left: -3em;
+    }
+
+    .hover-message {
+        top: 92%;
+        left: 12em;
+        width: 13em;
+        font-size: 1em;
+    }
+}

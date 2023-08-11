@@ -30,7 +30,7 @@ const weatherDescriptions: { [key: string]: string } = {
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css', './home_mediaT.component.css']
+  styleUrls: ['./home.component.css', './home_mediaT.component.css', './home_mediaD.component.css']
 })
 
 export class HomeComponent implements OnInit {
