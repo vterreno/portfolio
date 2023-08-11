@@ -1,0 +1,105 @@
+.proyectos {
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.intro-proyectos {
+    background-color: #4b55b4e6;
+    display: flex;;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    color: white;
+    justify-content: center;
+    position: relative;
+}
+
+.intro-proyectos a svg {
+    height: 2em;
+    width: 2em;
+    left: 2em;
+    top: 1.15em;
+    position: absolute;
+}
+
+.intro-proyectos h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.card {
+    margin: 1em;
+    padding: 1em;
+    background-color: rgb(243, 128, 128);
+    border-radius: 1em;
+    color: white;
+}
+
+.card-text h2 {
+    font-size: 1.2em;
+}
+
+.card-text p {
+    font-size: 0.9em;
+}
+
+.card-tags {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.tag {
+    background-color: #000000aa;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+.tag p {
+    margin: 0;
+    font-size: 0.7em;
+}
+
+.card-img {
+    margin-top: 1em;
+    position: relative;
+}
+
+#img-mobile {
+    position: absolute;
+    width: 30%;
+    left: 13em;
+    top: -0.6em;
+}
+
+.card-img img {
+    width: 100%;
+    border-radius: 0.5em;
+}
+
+.card-links {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    background-color: #000000aa;
+    gap: 0.5em;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.link img {
+    height: 12px;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+}
+
