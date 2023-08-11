@@ -8,6 +8,7 @@
                     <p>{{ getTranslation('intro-p') }}</p>
                 </div>
                 <div class="profile_pic">
+                    <span class="hover-message">{{ getTranslation('span') }}</span>
                     <img src="../../../assets/pic.png" alt="profile pic">
                 </div>
         </div>
@@ -23,10 +24,11 @@
         </div>
           
         <!-- color theme -->
-        <div class="div3"> 
-            <button id="theme-toggle"> 
-                <img id="theme-icon" class="sun" src="../../assets/sun.webp" alt="sol">
-            </button>
+        <div class="div3 theme-switcher" > 
+            <div class="slider-container">
+                <input type="checkbox" class="slider" id="themeToggle" (change)="toggleTheme()" />
+                <div class="slider-circle"></div>
+            </div>
         </div>
 
         <!-- Edad -->

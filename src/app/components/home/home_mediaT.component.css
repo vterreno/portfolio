@@ -1,3 +1,44 @@
+.theme-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #55489cc2;
+}
+  
+.slider-container {
+    position: relative;
+    width: 4.5em;
+    height: 35px;
+    background-color: #c8c6ef;
+    display: flex;
+    align-items: center;
+}
+  
+.slider {
+    width: 5em;
+    height: 2em;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+.slider-circle {
+    position: absolute;
+    left: 0.25em;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    pointer-events: none; /* Para que el círculo no bloquee el clic en el input */
+    background: linear-gradient(45deg,#dedede,#fff);
+    box-shadow: 0 6px 7px rgba(0,0,0,.3);
+    outline: none;
+}
+  
+.slider:checked + .slider-circle {
+    transform: translateX(2.4em);
+}
+  
+  
 .bg-tiempo {
     height: 6em;
     width: 6em;
@@ -82,6 +123,30 @@
     	display: flex;
     	justify-content: center;
     	top: -10%;
+    }
+
+    .hover-message {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease-in-out;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 90%;
+        width: 12.5em;
+        font-size: 0.7em;
+        left: 10em;
+    }
+
+    .profile_pic:hover .hover-message {
+        opacity: 1;
     }
 
     .div2 {
@@ -269,6 +334,21 @@
         width: 10em;
         margin-right: 1.5em;
     }
+
+    .slider {
+        width: 6.5em;
+        border-radius: 1em;
+        margin: 0;
+        height: 2.6em;
+    }
+
+    .slider-container {
+        width: 5.5em;
+    }
+
+    .slider:checked + .slider-circle {
+        transform: translateX(3.4em);
+    }
 }
 
 @media (min-width: 1532px) {
@@ -436,4 +516,10 @@
         left: -3em;
     }
 
+    .hover-message {
+        top: 92%;
+        left: 12em;
+        width: 13em;
+        font-size: 1em;
+    }
 }

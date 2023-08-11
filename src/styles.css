@@ -23,6 +23,11 @@ body {
     #theme-icon.moon {
         display: flex;
     }
+
+    .slider-container{ 
+        background-color: #d7d7d7 !important;
+    }
+
 }
 
 
