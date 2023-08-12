@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { P1Component } from './components/proyectos/p1/p1.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProyectosComponent,
+    P1Component,
   ],
   imports: [
     BrowserModule,

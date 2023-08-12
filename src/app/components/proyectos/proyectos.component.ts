@@ -5,11 +5,21 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './proyectos.component.html',
   styleUrls: ['./proyectos.component.css']
 })
+
 export class ProyectosComponent implements OnInit {
-
-  constructor() { }
-
+  
+  constructor() {}
+  
   ngOnInit(): void {
+  }
+
+  isPopupVisible = false;
+
+  togglePopup() {
+    const body = document.getElementById('proyectos');
+
+    body?.classList.toggle('blur');
+    this.isPopupVisible = !this.isPopupVisible;
   }
 
 }
