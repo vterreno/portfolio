@@ -21,7 +21,7 @@
 
 ## Preview
 <p align="center">
-  <img src="/src/assets/port-preview.webp" alt="preview" height="550" width="100%">
+  <img src="/src/assets/port-preview.webp" alt="preview" width="100%">
 </p>
 
 <br>
