@@ -13,10 +13,15 @@
 ## Características
 
 - **Responsive design**: mi portfolio es responsive en todos los dispositivos para generar una mejor experiencia al usuario.
+
 - **Sitio multilenguaje**: explora el contenido tanto en inglés como en español.
+  
 - **Tema oscuro/claro**: elige el tema que mas prefieras para visitar mi sitio web.
+  
 - **Redes sociales**: podes visitar mis redes sociales para conocerme un poco más y ponernos en contacto.
+  
 - **Información del clima**: mientras navegas por mi portfolio puedes ver el tiempo y el clima para mantenerte actualizado.
+  
 - **Proyectos y habilidades**: conoce en los proyectos que he trabajado y mis habilidades como desarrollador.
 
 ## Preview
