@@ -38,7 +38,6 @@
 
 .card-text p {
     font-size: 0.9em;
-    text-wrap: balance;
 }
 
 .card-tags {
@@ -117,6 +116,7 @@
 .close button {
     background: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .close button svg {

@@ -9,7 +9,7 @@
                 </div>
                 <div class="profile_pic">
                     <span class="hover-message">{{ getTranslation('span') }}</span>
-                    <img src="../../../assets/pic.png" alt="profile pic">
+                    <img src="../../../assets/pic.webp" alt="profile pic">
                 </div>
         </div>
 
@@ -19,14 +19,14 @@
             <div class="caja-btn">
                 <button *ngFor="let lang of languages" (click)="changeLanguage(lang)" [class.active]="currentLanguage === lang" id="btn-idioma">
                     {{ lang.toUpperCase() }}
-                  </button>
+                </button>
             </div>
         </div>
           
         <!-- color theme -->
         <div class="div3 theme-switcher" > 
             <div class="slider-container">
-                <input type="checkbox" class="slider" id="themeToggle" (change)="toggleTheme()" />
+                <input type="checkbox" class="slider" id="themeToggle" (change)="toggleTheme()" name="theme"/>
                 <div class="slider-circle"></div>
             </div>
         </div>

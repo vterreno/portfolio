@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-proyectos',
@@ -7,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ProyectosComponent implements OnInit {
-  
-  constructor() {}
+  translations: any;
+  currentLanguage: string = 'es';
+
+  constructor(private http: HttpClient) {}
   
   ngOnInit(): void {
+    this.currentLanguage = localStorage.getItem('selectedLanguage') || 'es';
+    this.loadTranslations();
   }
 
   isPopupVisible = false;
@@ -22,4 +27,15 @@ export class ProyectosComponent implements OnInit {
     this.isPopupVisible = !this.isPopupVisible;
   }
 
+  loadTranslations(): void {
+    const translationFile = `assets/${this.currentLanguage}.json`;
+
+    this.http.get(translationFile).subscribe((data: any) => {
+      this.translations = data;
+    });
+  }
+
+  getTranslation(key: string): string {
+    return this.translations[key] || key;
+  }
 }

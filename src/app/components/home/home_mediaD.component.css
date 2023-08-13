@@ -1,3 +1,85 @@
+.theme-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #55489cc2;
+}
+  
+.slider-container {
+    position: relative;
+    width: 4.5em;
+    height: 35px;
+    background-color: #c8c6ef;
+    display: flex;
+    align-items: center;
+}
+  
+.slider {
+    width: 5em;
+    height: 2em;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+.slider-circle {
+    position: absolute;
+    left: 0.25em;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    pointer-events: none; /* Para que el círculo no bloquee el clic en el input */
+    background: linear-gradient(45deg,#dedede,#fff);
+    box-shadow: 0 6px 7px rgba(0,0,0,.3);
+    outline: none;
+}
+  
+.slider:checked + .slider-circle {
+    transform: translateX(2.4em);
+}
+  
+.bg-tiempo {
+    height: 6em;
+    width: 6em;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    align-items: center;
+    border-radius: 100em;
+    margin-right: 1em;
+    background: linear-gradient(to bottom left,#ffeb3b,#f9a825 90%);
+    box-shadow: 1px 1px 30px #ffa000;
+}
+
+.div2 button {
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    background: transparent;
+    font-size: 1.2em;
+    padding: 0 0.15em;
+    cursor: pointer;
+}
+
+#btn-idioma.active {
+    color: #c9b4f6eb;
+}
+
+.proyectos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: fit-content;
+}
+
+.proyectos svg {
+    height: 1.5em;
+    width: 2em;
+    margin-right: 1.2em;
+}
+
+
 @media (min-width: 1024px) {
     .parent {
         width: auto;

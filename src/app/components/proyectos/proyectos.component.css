@@ -80,6 +80,11 @@
 
     .card-grid button {
         width: 100%;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .card-grid button:hover {
+        transform: scale(1.03);
     }
     
 }
