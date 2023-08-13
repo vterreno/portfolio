@@ -21,9 +21,10 @@
 
 ## Preview
 <p align="center">
-  <img src="/src/assets/port-preview.webp" alt="preview" height="100" width="100">
+  <img src="/src/assets/port-preview.webp" alt="preview" height="550" width="100%">
 </p>
 
+<br>
 
-</hr>
+<hr>
 Gracias por visitar mi portfolio web, ¡espero que te haya gustado y podamos trabajar juntos en un futuro!
