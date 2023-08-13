@@ -1,27 +1,29 @@
-# Portfolio
+<p align="center">
+  <a href="[your_website_url](https://portf-vterreno.web.app/)">
+    <img src="/src/assets/pic.webp" alt="Logo" width="100" height="160">
+  </a>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
+  <h3 align="center">¡Bienvenido a mi portfolio web!</h3>
 
-## Development server
+  <p align="center">
+    <a href="https://portf-vterreno.web.app/">@vterreno.portfolio</a>
+  </p>
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Características
 
-## Code scaffolding
+- **Responsive design**: mi portfolio es responsive en todos los dispositivos para generar una mejor experiencia al usuario.
+- **Sitio multilenguaje**: explora el contenido tanto en inglés como en español.
+- **Tema oscuro/claro**: elige el tema que mas prefieras para visitar mi sitio web.
+- **Redes sociales**: podes visitar mis redes sociales para conocerme un poco más y ponernos en contacto.
+- **Información del clima**: mientras navegas por mi portfolio puedes ver el tiempo y el clima para mantenerte actualizado.
+- **Proyectos y habilidades**: conoce en los proyectos que he trabajado y mis habilidades como desarrollador.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Preview
+<p align="center">
+  <img src="/src/assets/port-preview.webp" alt="preview" height="100" width="100">
+</p>
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+</hr>
+Gracias por visitar mi portfolio web, ¡espero que te haya gustado y podamos trabajar juntos en un futuro!
