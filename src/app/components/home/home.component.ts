@@ -35,8 +35,8 @@ const weatherDescriptions: { [key: string]: string } = {
 
 export class HomeComponent implements OnInit {
   // Componente Idioma
-  languages: string[] = ['en', 'es'];
   currentLanguage: string = 'es';
+  languages: string[] = ['en', 'es'];
   translations: any;
   
   // Componente Clima
@@ -67,7 +67,7 @@ export class HomeComponent implements OnInit {
       this.actualizarHora();
     }, 1000); // Actualizar la hora cada segundo
 
-    this.currentLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    this.currentLanguage = localStorage.getItem('selectedLanguage') || 'es';
     this.loadTranslations();
   }
 

@@ -82,7 +82,7 @@
 
 @media (min-width: 1024px) {
     .parent {
-        width: auto;
+        width: 85%;
         height: auto;
     }
 
