@@ -9,7 +9,7 @@
             </button>
         </div>
         
-        <div class="card-text">
+        <div class="card-text" *ngIf="translationsLoaded">
             <!-- Texto -->
             <h2> Fundación Dr. Antonio Sobral</h2>
             <p> {{ getTranslation('p1-texto')}}</p>

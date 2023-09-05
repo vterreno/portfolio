@@ -44,20 +44,12 @@ export class HomeComponent implements OnInit {
   description: string = ''
   horaActual: string = ''
   intervalId: any;
+  translationsLoaded = false;
+
 
   constructor(private http: HttpClient) { }
   
   ngOnInit(): void {
-
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    themeToggleBtn?.addEventListener('click', () => {
-      this.toggleTheme();
-      const themeIcon = document.getElementById('theme-icon');
-      themeIcon?.classList.add('rotate-animation');
-      setTimeout(() => {
-        themeIcon?.classList.remove('rotate-animation');
-      }, 300); // Espera 300ms (tiempo de la animación) y luego elimina la clase para permitir otra transición
-    });
 
     this.intervalId = setInterval(() => {
       this.loadWeatherData();
@@ -81,18 +73,6 @@ export class HomeComponent implements OnInit {
   toggleTheme() {
     const body = document.body;
     body.classList.toggle('theme-dark');
-
-    // Cambiar el ícono de sol/luna
-    const themeIcon = document.getElementById('theme-icon') as HTMLImageElement;
-    if (body.classList.contains('theme-dark')) {
-      themeIcon.src = '../../assets/moon.webp';
-      themeIcon.classList.toggle('moon')
-      themeIcon.classList.remove('sun')
-    } else {
-      themeIcon.src = '../../assets/sun.webp';
-      themeIcon.classList.toggle('sun')
-      themeIcon.classList.remove('moon')
-    }
   }
 
   // Clima
@@ -115,7 +95,7 @@ export class HomeComponent implements OnInit {
   // Función para mostrar los datos en la interfaz
   displayWeatherData(data: WeatherData): void {
     this.temperature = Math.round(data.main.temp);
-    if( this.currentLanguage == "es") {
+    if(this.currentLanguage == "es") {
       this.description = weatherDescriptions[data.weather[0].description] || data.weather[0].description;
     } else {
       this.description = data.weather[0].description.slice(0, 1).toUpperCase() + data.weather[0].description.slice(1)
@@ -173,6 +153,7 @@ export class HomeComponent implements OnInit {
 
     this.http.get(translationFile).subscribe((data: any) => {
       this.translations = data;
+      this.translationsLoaded = true;
     });
   }
 

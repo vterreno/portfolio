@@ -10,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class ProyectosComponent implements OnInit {
   translations: any;
   currentLanguage: string = 'es';
+  translationsLoaded = false;
 
   constructor(private http: HttpClient) {}
   
@@ -32,6 +33,7 @@ export class ProyectosComponent implements OnInit {
 
     this.http.get(translationFile).subscribe((data: any) => {
       this.translations = data;
+      this.translationsLoaded = true;
     });
   }
 

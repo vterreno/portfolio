@@ -10,7 +10,8 @@ export class P1Component implements OnInit {
   @Output() close = new EventEmitter<void>();
   translations: any;
   currentLanguage: string = 'es';
-  
+  translationsLoaded = false;
+
   constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
@@ -28,6 +29,7 @@ export class P1Component implements OnInit {
 
     this.http.get(translationFile).subscribe((data: any) => {
       this.translations = data;
+      this.translationsLoaded = true;
     });
   }
 
